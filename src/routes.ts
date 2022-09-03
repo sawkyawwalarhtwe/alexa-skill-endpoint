@@ -32,7 +32,7 @@ function routes(app:Express){
     app.get('/',(req,res)=>{
       res.sendStatus(200);
   });
-  app.post('/', adapter.getRequestHandlers());
+  app.post('/alexa', adapter.getRequestHandlers());
 
 }
 
